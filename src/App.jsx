@@ -1,17 +1,18 @@
-import React from 'react'
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-function App() {
+export default function App() {
   return (
-    <div className="p-10">
-      
-      <button class="btn btn-info">Info</button>
-      
-    
-      <div className="mt-5 p-5 bg-yellow-400 font-bold">
-        Tailwind Check
+    <BrowserRouter>
+      <div className="min-h-screen bg-base-200">
+        <Navbar />
+        <main className="p-10 text-center">
+          <h1 className="text-3xl font-bold text-primary">
+            Welcome to Keenkeeper
+          </h1>
+          
+        </main>
       </div>
-    </div>
-  )
+    </BrowserRouter>
+  );
 }
-
-export default App
