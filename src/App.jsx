@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
+import Stats from "./pages/Stats";
 import FriendDetail from "./pages/FriendDetails";
 import { TimelineProvider } from "./context/TimelineContext";
 
@@ -24,6 +25,8 @@ export default function App() {
               
               {/* Onno page gulo */}
               <Route path="/timeline" element={<Timeline />} />
+              <Route path="/stats" element={<Stats />} />
+
               
               
               
