@@ -1,18 +1,37 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Timeline from "./pages/Timeline";
+import FriendDetail from "./pages/FriendDetails";
+import { TimelineProvider } from "./context/TimelineContext";
+
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-base-200">
-        <Navbar />
-        <main className="p-10 text-center">
-          <h1 className="text-3xl font-bold text-primary">
-            Welcome to Keenkeeper
-          </h1>
+   
+     <TimelineProvider> {/* Context Provider */}
+      <BrowserRouter>
+        <div className="min-h-screen flex flex-col bg-[#f8f7f4]">
+          <Navbar />
           
-        </main>
-      </div>
-    </BrowserRouter>
+          <main className="flex-1">
+            <Routes>
+              {/* Home page route */}
+              <Route path="/" element={<Home />} />
+              
+              {/* Friend Details Page */}
+              <Route path="/user/:id" element={<FriendDetail />} />
+              
+              {/* Onno page gulo */}
+              <Route path="/timeline" element={<Timeline />} />
+              
+              
+              
+            </Routes>
+          </main>
+        </div>
+      </BrowserRouter>
+    </TimelineProvider> 
+
   );
 }
