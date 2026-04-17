@@ -10,13 +10,16 @@ const TimelineContext = createContext();
 export function TimelineProvider({ children }) {
   const [entries, setEntries] = useState([]);
 
-  const addEntry = (type, friendName) => {
+   const addEntry = (type, friendName) => {
     const newEntry = {
       id: Date.now(),
-      type,
-      friendName,
-      title: `${type} with ${friendName}`,
-      date: new Date().toISOString(),
+      title: `${type} with ${friendName}`, // Auto title: "Call with Sarah"
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }), // Auto Date: "April 17, 2026"
+      type: type, // Call, Text,  Video
     };
     setEntries((prev) => [newEntry, ...prev]);
   };

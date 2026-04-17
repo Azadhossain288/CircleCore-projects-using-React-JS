@@ -7,6 +7,7 @@ import FriendDetail from "./pages/FriendDetails";
 import NotFound from "./pages/NotFound";
 import { TimelineProvider } from "./context/TimelineContext";
 import Footer from "./components/Footer";
+import { Toaster } from 'react-hot-toast';
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
      <TimelineProvider> {/* Context Provider */}
       <BrowserRouter>
         <div className="min-h-screen flex flex-col bg-[#f8f7f4]">
+          <Toaster position="top-center" reverseOrder={false} />
           <Navbar />
           
           <main className="flex-1">
