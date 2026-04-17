@@ -20,7 +20,8 @@ export default function NotFound() {
       </div>
 
       <h2 className="text-2xl font-black text-gray-700 mb-3">
-        Lost in orbit
+        404 Error
+        
       </h2>
       <p className="text-gray-400 text-base mb-8 max-w-sm">
         The page you're looking for doesn't exist or may have been moved.
