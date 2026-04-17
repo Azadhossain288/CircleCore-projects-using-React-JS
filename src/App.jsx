@@ -6,6 +6,7 @@ import Stats from "./pages/Stats";
 import FriendDetail from "./pages/FriendDetails";
 import NotFound from "./pages/NotFound";
 import { TimelineProvider } from "./context/TimelineContext";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -34,6 +35,8 @@ export default function App() {
               
             </Routes>
           </main>
+
+          <Footer />
         </div>
       </BrowserRouter>
     </TimelineProvider> 
