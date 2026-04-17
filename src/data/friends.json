@@ -94,5 +94,56 @@
     "bio": "Met at a local developer meetup in 2022. We share interests in open source and often collaborate on side projects on weekends.",
     "goal": 30,
     "next_due_date": "2025-08-01"
+  },
+
+   {
+    "id": 9,
+    "name": "Nabil Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "nabil.ahmed@live.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["childhood", "neighbor"],
+    "bio": "My neighbor from back home. We've known each other since we were five. Even though we live in different cities now, we talk almost every day about football and life.",
+    "goal": 7,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 10,
+    "name": "Sophie Müller",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "sophie.m@web.de",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["language", "travel"],
+    "bio": "Met during a German language course in Berlin. She's a photographer and always sends beautiful postcards from her travels. It's been a while since our last long chat.",
+    "goal": 20,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 11,
+    "name": "Liam Henderson",
+    "picture": "https://randomuser.me/api/portraits/men/82.jpg",
+    "email": "liam.h@techcorp.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["work", "mentor"],
+    "bio": "Senior architect at my previous company. He gave me great career advice when I was starting out. We try to have a professional catch-up once a month.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 12,
+    "name": "Fatima Zahra",
+    "picture": "https://randomuser.me/api/portraits/women/50.jpg",
+    "email": "fatima.z@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["art", "community"],
+    "bio": "We met at a local pottery workshop. She has an amazing eye for design. We usually meet up at art galleries or exhibitions twice a month.",
+    "goal": 15,
+    "next_due_date": "2025-07-27"
   }
+
+
 ]
