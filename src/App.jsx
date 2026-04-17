@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
 import Stats from "./pages/Stats";
 import FriendDetail from "./pages/FriendDetails";
+import NotFound from "./pages/NotFound";
 import { TimelineProvider } from "./context/TimelineContext";
 
 
@@ -23,11 +24,12 @@ export default function App() {
               {/* Friend Details Page */}
               <Route path="/user/:id" element={<FriendDetail />} />
               
-              {/* Onno page gulo */}
+              {/* another page timeline and stats  */}
               <Route path="/timeline" element={<Timeline />} />
               <Route path="/stats" element={<Stats />} />
 
               
+               <Route path="*" element={<NotFound />} />
               
               
             </Routes>
